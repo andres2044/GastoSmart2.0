@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - GastoSmart</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo GastoSmart" class="logo">
+        <header>
+            <h1>GastoSmart</h1>
+        </header>
+        <main>
+            <h2>Iniciar sesión</h2>
+            <form action="php/login.php" method="POST">
+                <div class="input-container">
+                    
+                    <label for="correo">📧Correo:</label>
+                    <input type="email" name="correo" required>
+                </div>
+                <div class="input-container">
+                    
+                    <label for="password">🔒Contraseña:</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </main>
+    </div>
+</body>
+</html>

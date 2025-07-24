@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Categoría - GastoSmart</title>
+    <link rel="stylesheet" href="css/categoria.css">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="header-text">
+            <h1>📁 Categoría</h1>
+            <p>Administra tus categorías para ahorrar dinero inteligentemente</p>
+        </div>
+        <div>
+            <a href="inicio.html" class="login-button">Volver</a>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form action="php/agregar_categoria.php" method="POST">
+            <label for="nombre">Nombre de categoría:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion">
+
+            <label for="presupuesto">Presupuesto mensual (MXN):</label>
+            <input type="number" step="0.01" id="presupuesto" name="presupuesto" required>
+
+            <button type="submit">Agregar categoría</button>
+        </form>
+    </div>
+</body>
+</html>

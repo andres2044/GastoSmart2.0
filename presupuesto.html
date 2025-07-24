@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presupuesto - GastoSmart</title>
+    <link rel="stylesheet" href="css/presupuesto.css">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="header-text">
+            <h1>Registrar Presupuesto</h1>
+            <p>Define tu presupuesto para controlar tus gastos</p>
+        </div>
+        <div>
+            <a href="inicio.html" class="login-button">Volver</a>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form action="php/guardar_presupuesto.php" method="POST">
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria" required>
+
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" name="monto" step="0.01" required>
+
+            <label for="fecha_inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+
+            <label for="fecha_fin">Fecha de fin:</label>
+            <input type="date" id="fecha_fin" name="fecha_fin" required>
+
+            <button type="submit">Registrar Presupuesto</button>
+        </form>
+    </div>
+</body>
+</html>
